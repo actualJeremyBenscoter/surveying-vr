@@ -21,6 +21,8 @@ public class SurveyorStand : SerializedMonoBehaviour
         }
     }
 
+    [SerializeField]
+    [HideInInspector]
     private float _height = 1f;
     private Quaternion _rotation = Quaternion.identity;
 
@@ -31,6 +33,8 @@ public class SurveyorStand : SerializedMonoBehaviour
     {
         RendererTransform = transform.Find("Renderer").transform;
     }
+
+
 
     void UpdateRenderer()
     {
