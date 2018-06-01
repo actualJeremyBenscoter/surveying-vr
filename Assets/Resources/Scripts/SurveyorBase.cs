@@ -103,8 +103,8 @@ public class SurveyorBase : MonoBehaviour
     private void UpdateDistanceAndHeight()
     {
         RaycastHit hit;
-
-        if (Physics.Linecast(transform.position, -transform.forward * 1000f, out hit))
+        Debug.DrawLine(transform.position, transform.forward * 1000f, Color.yellow);
+        if (Physics.Linecast(transform.position, transform.forward * 1000f, out hit))
         {
             if (hit.collider.gameObject.tag == "SurveyStick")
             {

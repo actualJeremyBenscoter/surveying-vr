@@ -38,16 +38,16 @@ public class SurveyorStand : SerializedMonoBehaviour
 
     void UpdateRenderer()
     {
-        if (RendererTransform)
-        {
-            var scale = RendererTransform.localScale;
-            scale.y = Height;
-            RendererTransform.localScale = scale;
+        //if (RendererTransform)
+        //{
+        //    var scale = RendererTransform.localScale;
+        //    scale.y = Height;
+        //    RendererTransform.localScale = scale;
 
-            var position = RendererTransform.position;
-            position.y = scale.y * 0.5f;
-            RendererTransform.position = position;
-        }
+        //    var position = RendererTransform.position;
+        //    position.y = scale.y * 0.5f;
+        //    RendererTransform.position = position;
+        //}
     }
 
     private void OnHeightChanged(float newHeight)
